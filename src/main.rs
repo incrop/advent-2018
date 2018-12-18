@@ -16,6 +16,7 @@ mod day10;
 mod day11;
 mod day12;
 mod day13;
+mod day14;
 
 fn main() -> Result<()> {
     let arg = read_argument();
@@ -56,6 +57,8 @@ fn init_challenges() -> HashMap<String, (String, InputProcessor)> {
     c.insert("day12_2".to_owned(), ("day12.txt".to_owned(), day12::challenge2));
     c.insert("day13_1".to_owned(), ("day13.txt".to_owned(), day13::challenge1));
     c.insert("day13_2".to_owned(), ("day13.txt".to_owned(), day13::challenge2));
+    c.insert("day14_1".to_owned(), ("day14.txt".to_owned(), day14::challenge1));
+    c.insert("day14_2".to_owned(), ("day14.txt".to_owned(), day14::challenge2));
     c
 }
 
